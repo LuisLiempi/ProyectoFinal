@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/css/foundation.min.css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app-Final.css">
+</head>
+
+<body>
+    <div id="container" class="row">
+        <div class="small-12 medium-5 large-5 columns imagen"> <img /></div>
+        <div class="small-12 medium-7 large-7 columns datos panel">   </div>
+        <div class="small-12 medium-7 large-7 columns">  
+            <button class="dislike but-nope trsn" onclick="dislikePelicula(pagina++)"><i class="fa fa-thumbs-o-down" aria-hidden="true" ></i></button>
+            <button class="like but-yay trsn" onclick="likePelicula(pagina++)"><i class="fa fa-thumbs-o-up trsn" aria-hidden="true"></i></button>
+            <button class="refresh but-yay trsn" onclick="refreshPeliculas() "><i class="fa fa-refresh" aria-hidden="true"></i></button>
+        </div>        
+    </div>
+
+    <div id="nofilms" class="reveal-modal tiny" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h2 id="modalTitle">¡Lo sentimos!.</h2>
+      <p class="lead">No existen mas peliculas.</p>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+    <div id="refreshOptions" class="reveal-modal small" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <h2 id="modalTitle">¡Hemos vuelto a empezar!.</h2>
+      <p class="lead">Se han eliminado los datos.</p>
+      <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+    </div>
+
+</body>
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.3/js/foundation.min.js"></script>
+<script src="js/app-Final.js"></script>
+<script type="text/javascript">
+    $(document).foundation();
+</script>
+
+</html>
+
+
+
+
+
+
+

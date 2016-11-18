@@ -1,0 +1,102 @@
+body, h1, h2, p {
+	font-family: 'Lato', sans-serif !important;
+}
+*.trsn,
+*.trsn:hover,
+a
+*.trsn:focus,
+a,
+a:hover,
+a:focus {
+    text-decoration: none !important;
+    -webkit-transition: all 0.3s linear !important;
+    -moz-transition: all 0.3s linear !important;
+    -ms-transition: all 0.3s linear !important;
+    -o-transition: all 0.3s linear !important;
+    transition: all 0.3s linear !important;
+}
+#container {
+	margin-top: 15px;
+}
+.imagen img {
+	text-align: center;
+	width: 100%;
+}
+.datos h1 {
+	font-style: normal;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+.datos h2 {
+	font-style: normal;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.datos p {
+	font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #2f5869;
+    height: 100px;
+}
+button.dislike {
+    color: #ffffff;
+    font-size: 2rem;
+    background: red;
+    border: 3px solid #f16a6a;
+    padding: 8px 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    opacity: .75;
+    font-family: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+
+button.like {
+    color: #ffffff;
+    font-size: 2rem;
+    background: #4CAF50;
+    border: 3px solid #8BC34A;
+    padding: 8px 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    opacity: .75;
+    font-family: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+button.refresh {
+    color: #ffffff;
+    font-size: 2rem;
+    background: #607D8B;
+    border: 3px solid #9E9E9E;
+    padding: 8px 10px;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    opacity: .75;
+    font-family: none;
+    margin: 0;
+    cursor: pointer;
+}
+
+button.dislike:hover,
+button.like:hover,
+button.refresh:hover {
+	opacity: 1;
+}
+
+
+button.dislike[disabled],
+button.like[disabled],
+button.refresh[disebled] {
+	background: #cccccc;
+	border: 3px solid #bbbbbb;
+}
